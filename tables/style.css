@@ -1,0 +1,24 @@
+
+body{
+background-color: rgb(222, 248, 247);
+}
+table, th, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, tr {
+    padding: 15px;
+}
+table {
+    width: 700px;
+    
+}
+.basico {
+    background-color: rgba(252, 152, 152, 0.199);
+}
+.intermediario {
+    background-color: rgba(215, 255, 72, 0.452);
+}
+.avancado {
+    background-color: rgba(128, 255, 0, 0.301);
+}
