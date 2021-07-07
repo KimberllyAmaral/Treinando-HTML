@@ -1,18 +1,38 @@
-
-,<!DOCTYPE html>
+,
+<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionando Iframes</title>
 </head>
+
 <body>
     <h1>Iframe</h1>
     <hr>
-    <p>Trabalhando com tipos diferentes de Iframe</p>
+        <p>Trabalhando com tipos diferentes de Iframe</p>
     <h2>Iframe simples</h2>
-    <p>Este é um ótimo canal para estudar desenvolvimento.</p>
-    <Iframe src="https://www.youtube.com/user/cursosemvideo" style="heith: 200px;wight:300px;" title="Canal curso em vídeo"></Iframe>
+        <p>Esta é uma ótima escola para desenvolvedores.</p>
+
+    <!-- Primeiro Iframe Simples-->
+    <Iframe src="https://www.gama.academy/" style="height: 300px;width:400px;" title="Canal curso em vídeo"></Iframe>
+
+    <h2>Iframe com Target</h2>
+        <p>Estas são outras ótimas escolas para desenvolvedores. </p>
+
+    <!-- Lista com links para o Iframe -->
+    <ul>
+        <li><a href="https://kenzie.com.br/" target="exibir">Kenzie</a></li>
+        <li><a href="https://www.gama.academy/" target="exibir">Gama</a></li>
+        <li><a href="https://www.alura.com.br/" target="exibir">Alura</a></li>
+    </ul>
+        <p>CLique nos nomes para ver o site sem precisar sair da página.</p>
+
+        <!-- Iframe com target para os links da lista -->
+    <iframe src="https://kenzie.com.br/" style="height: 300px;width:400px;"frameborder="0" name="exibir"></iframe>
+
 </body>
+
 </html>
