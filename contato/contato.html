@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de contato</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+        <main>
+            <div>
+                <h1 id="titulo">Dados para nivelamento</h1>
+                <p id="subtitulo">Deixe seus dados para agendarmos o seu nivelamento.</p>
+            </div>
+            <form action="#">
+                <fieldset class="grupo">
+                    <div>
+                        <label for="nome"><strong>Nome:</strong></label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div>
+                        <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                        <input type="text" id="sobrenome" name="sobrenome">
+                    </div>
+                </fieldset>
+            
+                <div class="campo">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                 <div class="campo">
+                    <label>Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                 </div>
+                    <div class="campo">
+                        <label>Selecione o seu nível de inglês:</label>
+                        <br>
+                        <label>
+                            <input type="radio" name="nivel" value="sem_contato" checked> Quase não tenho contato com o idioma
+                        </label>
+                        <label>
+                            <input type="radio" name="nivel" value="a1"> A1 - Primário
+                        </label>
+                        <label>
+                            <input type="radio" name="nivel" value="a2"> A2 - Básico
+                        </label>
+                        <label>
+                            <input type="radio" name="nivel" value="b1"> B1 - Intermediário
+                        </label>
+                        <label>
+                            <input type="radio" name="nivel" value="b2"> B2 - Pré-avançado
+                        </label>
+                        <label>
+                            <input type="radio" name="nivel" value="c1"> C1 - Avançado
+                        </label>
+                        <label>
+                            <input type="radio" name="nivel" value="c2"> C2 - Proficiência de um nativo
+                        </label>
+                    </div>
+                        <div class="campo">
+                            <label>Qual tipo a modalidade de aula você prefere?</label>
+                            <select id="modalidade">
+                                <option selected disabled value="">Selecione</option>
+                                <option>Turma (máx. 3 alunos)</option>
+                                <option>Particular (você e o professor)</option>
+                            </select>
+                        </div>
+                        <fieldset class="grupo">
+                            <div>
+                                <label>Qual o foco dos seus estudos?</label><br>
+                                <input type="checkbox" id="foco1" name="foco1" value="profissional" >
+                                <label>Inglês para vida profissional</label>
+                                <input type="checkbox" id="foco2" name="foco2" value="dia" >
+                                <label>Inglês para o dia-dia</label>
+                                <input type="checkbox" id="foco3" name="foco3" value="viagem" >
+                                <label>Viagens</label>
+                                <input type="checkbox" id="foco4" name="foco4" value="aupair" >
+                                <label>Preparatório Aupair</label>
+            
+                            </div>
+                        </fieldset>
+                        <div>
+                            <br>
+                            <label>Nos conte os seus planos em relação ao Inglês, assim podemos personalizar e otimizar a sua experiência em sala de aula.</label>
+                            <br>
+                        <textarea row="6" style="width:26em" name="planos" id="planos" rows="10" placeholder="Exemplo: Pretendo migrar para o Canadá daqui a 2 anos..."></textarea>
+                        </div>
+                        <button type="submit"> Enviar </button>
+            
+            </form>
+        </main>
+</body>
+
+</html>
