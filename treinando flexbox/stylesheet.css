@@ -1,7 +1,11 @@
-.fieldset1 {
-    border: none;
+fieldset {
+    border: 0;
     display: flex;
     justify-content: center;
+    position: relative;
+
+    
+    
 }
 
 h1 {
@@ -9,11 +13,21 @@ h1 {
 }
 
 .campo {
-    margin: 5px;  
+    margin: 5px;
+      
     
 }
 .campo input[type="text"], .campo input[type="email"], .campo input[type="tel"] {
     padding: 5px;
     border-radius: 5px;
     border-color: rgb(6, 123, 219);
+    
+
 }
+.fieldset2 {
+    border: 0;
+    position: absolute;
+}
+    
+
+
