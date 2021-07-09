@@ -1,0 +1,19 @@
+.fieldset1 {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.campo {
+    margin: 5px;  
+    
+}
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"] {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: rgb(6, 123, 219);
+}
