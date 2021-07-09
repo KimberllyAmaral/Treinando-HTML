@@ -8,60 +8,89 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-    <img src="" alt="">
-    <h1>Inscreva-se!</h1>
-    <form>
-        <fieldset class="fieldset1">
-            <div>
-                <div class="campo">
-                    <label for="nome" >Nome:</label>
-                    <br>
-                    <input type="text" name="nome" id="nome">
-                </div>
-                <div class="campo">
-                    <label for="sobrenome" >Sobrenome:</label>
-                    <br>
-                    <input type="text" name="sobrenome" id="sobrenome">
-                </div>
-                
-                
+    <div id="titulo">
+        <h1>Inscreva-se!</h1>
+    </div>
 
-            </div>
-
-            <div>
-                <div class="campo">
-                    <label for="email" >Email:</label>
-                    <br>
-                    <input type="email" name="email" id="email">
-                </div>
-                <div class="campo">
-                    <label for="telefone" >Telefone:</label>
-                    <br>
-                    <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000">
-                </div>
-            </div>    
-                
-                
-        </fieldset>
-
-        <fieldset class="fieldset2">
-            <div class="nivel">
-                <br>
-                <label id="titulo-nivel" for="nivel"><strong>Qual o seu nível de Inglês?</strong></label> <br>
-                <label><input type="radio" name="sem-contato" value="sem-contato" checked> Não tenho muito contato com o idioma</label> <br>
-                <label><input type="radio" name="a1" value="a1"> A1 - nível primário</label><br>
-                <label><input type="radio" name="a2" value="a2"> A2 - nível básico</label> <br>
-                <label><input type="radio" name="b1" value="b1"> B1 - nível intermediário</label> <br>
-                <label><input type="radio" name="b2" value="b2"> B2 - nível pré-avançado</label> <br>
-                <label><input type="radio" name="c1" value="c1"> C1 - nível avançado</label>
-            </div>
-        </fieldset>
-
-        
+    <main>
+        <form>
             
-                
+            <fieldset class="fieldset1">
+                <div id="nome">
+                    <div class="campo">
+                        <label for="nome" ><strong>Nome:</strong></label>
+                        <br>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="campo">
+                        <label for="sobrenome" ><strong>Sobrenome:</strong></label>
+                        <br>
+                        <input type="text" name="sobrenome" id="sobrenome">
+                    </div>
         
+        
+                </div>
+                <div id="contato">
+                    <div class="campo">
+                        <label for="email" ><strong>Email:</strong></label>
+                        <br>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="campo">
+                        <label for="telefone" ><strong>Telefone:</strong></label>
+                        <br>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(00) 00000-0000">
+                    </div>
+                </div>
+        
+        
+            </fieldset>
+            <fieldset class="fieldset2">
+                <div class="nivel">
+                    <label id="titulo-nivel" for="nivel"><strong>Qual o seu nível de Inglês?</strong></label> <br>
+                    <label><input type="radio" name="sem-contato" value="sem-contato" checked> Não tenho muito contato com o idioma</label> <br>
+                    <label><input type="radio" name="a1" value="a1"> A1 - nível primário</label><br>
+                    <label><input type="radio" name="a2" value="a2"> A2 - nível básico</label> <br>
+                    <label><input type="radio" name="b1" value="b1"> B1 - nível intermediário</label> <br>
+                    <label><input type="radio" name="b2" value="b2"> B2 - nível pré-avançado</label> <br>
+                    <label><input type="radio" name="c1" value="c1"> C1 - nível avançado</label>
+                </div>
+            </fieldset>
 
-    </form>
+            <fieldset>
+                <div class="campo">
+                    <br>
+                    <label id="titulo-modalidade"><strong>Qual modalidade de aula você prefere?</strong></label>
+                    <br>
+                    <select name="modalidade" id="modalidade">
+                        <option selected disable value="">Selecione</option>
+                        <option>Turma (máx. de 3 alunos)</option>
+                        <option>Particular (você e o prof.)</option>
+                    </select>
+                </div>
+            </fieldset>
+        
+            <fieldset>
+                <div>
+                    <br>
+                    <label id="titulo-area"><strong>Você deseja focar os estudos do idiona em qual área?</strong> </label><br>
+                    <input type="checkbox" id="profissional" name="profissional" value="profissional"><label>Profissional</label><br>
+                    <input type="checkbox" id="cotidiano" name="cotidiano" value="cotidiano"><label >Dia-a-dia/cotidiano</label><br>
+                    <input type="checkbox" id="preparatorio-aupair" name="preparatorio-aupair" value="preparatorio-aupair"><label>Preparatório Au-pair</label><br>
+                    <input type="checkbox" id="viagem" name="viagem" value="viagem"><label>Viagem</label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <div>
+                    <label id="titulo-plano"><strong>Nos conte os seus planos em relação ao idioma:</strong></label><br>
+                    <textarea rows="6" style="width: 26em" id="planos" name="planos" placeholder="Exemplo: Estou planejando migrar para o Canandá dentro de 2 anos... "></textarea>
+                </div>
+            </fieldset>
+
+            <button class="botao" type="submit" onsubmit="">Concluído</button>  
+        
+        </form>
+    </main>
 </body>
 </html>
