@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(228, 204, 252);
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+ul {
+    list-style: none;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./imagens/fundo\ 3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 10px 1px white;
+}
+
+header ul {
+    display: flex;
+    
+}
+
+header ul li {
+    padding: 7px;
+}
+
+header ul li a {
+    transition: 400ms;
+}
+
+header ul li a:hover {
+    color: rgb(130, 20, 220);
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.container h1 {
+    font-size: 50px;
+}
+
+.container h5 {
+    font-size: 15px;
+}
+
+#about p {
+    max-width: 510px;
+    margin: 0 auto;
+    
+    
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+}
+
+.form button {
+    width: 25%;
+    padding: 5px 10px;
+    background-color: rgb(204, 182, 233);
+    color: rgb(215, 9, 223);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    
+    
+}
+
+.form button:hover {
+    background-color: rgb(234, 137, 247);
+}
